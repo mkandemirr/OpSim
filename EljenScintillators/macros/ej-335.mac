@@ -1,0 +1,10 @@
+#EJ-335 MatProp
+/matPropTable/EJ-335/addProperty SCINTILLATIONCOMPONENT1 EljenScintillators/data/ej-335/scntComp1.txt eV unitless
+/matPropTable/EJ-335/addProperty RINDEX EljenScintillators/data/ej-335/refIndex.txt eV unitless #1.48
+/matPropTable/EJ-335/addProperty ABSLENGTH EljenScintillators/data/ej-335/absLength.txt eV cm # 450 cm
+
+/matPropTable/EJ-335/addConstProperty SCINTILLATIONYIELD 13 1/MeV #8500
+/matPropTable/EJ-335/addConstProperty SCINTILLATIONYIELD1 1 
+/matPropTable/EJ-335/addConstProperty SCINTILLATIONTIMECONSTANT1 2.1 ns
+/matPropTable/EJ-335/addConstProperty SCINTILLATIONRISETIME1 0.9 ns
+/matPropTable/EJ-335/addConstProperty RESOLUTIONSCALE 0.3

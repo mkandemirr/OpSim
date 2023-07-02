@@ -1,0 +1,10 @@
+#EJ-426 MatProp
+/matPropTable/EJ-426/addProperty SCINTILLATIONCOMPONENT1 EljenScintillators/data/ej-426/scntComp1.txt eV unitless
+/matPropTable/EJ-426/addProperty RINDEX EljenScintillators/data/ej-426/refIndex.txt eV unitless
+/matPropTable/EJ-426/addProperty ABSLENGTH EljenScintillators/data/ej-426/absLength.txt eV cm #0.015 
+
+/matPropTable/EJ-426/addConstProperty SCINTILLATIONYIELD 10 1/MeV #40000./MeV
+/matPropTable/EJ-426/addConstProperty SCINTILLATIONYIELD1 1 
+/matPropTable/EJ-426/addConstProperty SCINTILLATIONTIMECONSTANT1 200 ns
+/matPropTable/EJ-426/addConstProperty SCINTILLATIONRISETIME1 1.5 ns
+/matPropTable/EJ-426/addConstProperty RESOLUTIONSCALE 1.0

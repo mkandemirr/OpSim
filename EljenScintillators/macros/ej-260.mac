@@ -1,0 +1,12 @@
+#EJ-260 MatProp
+/matPropTable/EJ-260/addProperty SCINTILLATIONCOMPONENT1 EljenScintillators/data/ej-260/scntComp1.txt eV unitless
+/matPropTable/EJ-260/addProperty RINDEX EljenScintillators/data/ej-260/refIndex.txt eV unitless false false 1.58
+/matPropTable/EJ-260/addProperty WLSABSLENGTH EljenScintillators/data/ej-260/wlsAbsLength.txt eV cm 
+/matPropTable/EJ-260/addProperty WLSCOMPONENT EljenScintillators/data/ej-260/wlsComp.txt eV unitless
+
+/matPropTable/EJ-260/addConstProperty SCINTILLATIONYIELD 10 1/MeV #9200
+/matPropTable/EJ-260/addConstProperty SCINTILLATIONYIELD1 1 
+/matPropTable/EJ-260/addConstProperty SCINTILLATIONTIMECONSTANT1 9.2 ns
+/matPropTable/EJ-260/addConstProperty WLSTIMECONSTANT 9.2 ns
+/matPropTable/EJ-260/addConstProperty SCINTILLATIONRISETIME1 1.51 ns
+/matPropTable/EJ-260/addConstProperty RESOLUTIONSCALE 1.0

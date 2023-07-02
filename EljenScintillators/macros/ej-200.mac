@@ -1,0 +1,12 @@
+#EJ-200 MatProp
+/matPropTable/EJ-200/addProperty SCINTILLATIONCOMPONENT1 EljenScintillators/data/ej-200/scntComp1.txt nm unitless
+/matPropTable/EJ-200/addProperty RINDEX EljenScintillators/data/ej-200/refIndex.txt eV unitless false false 1.58
+/matPropTable/EJ-200/addProperty ABSLENGTH EljenScintillators/data/ej-200/absLength.txt eV cm false false 250 
+
+/matPropTable/EJ-200/addConstProperty SCINTILLATIONYIELD 13 1/MeV
+/matPropTable/EJ-200/addConstProperty SCINTILLATIONYIELD1 1 
+/matPropTable/EJ-200/addConstProperty SCINTILLATIONTIMECONSTANT1 2.1 ns
+/matPropTable/EJ-200/addConstProperty SCINTILLATIONRISETIME1 0.19 ns
+/matPropTable/EJ-200/addConstProperty RESOLUTIONSCALE 0.3
+
+
