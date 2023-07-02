@@ -88,14 +88,11 @@ fAddConstPropertyCmd{nullptr}
 
 MaterialPropertiesTableMessenger::~MaterialPropertiesTableMessenger()
 {
-   //Test 
-   // G4cout<<"fAddPropertyCmd "<<fAddPropertyCmd->GetCommandPath()<<" deleted."<<G4endl;
    if(fDirectory1) delete fDirectory1;
    if(fDirectory2) delete fDirectory2;
    
    delete fAddPropertyCmd; 
-   delete fAddConstPropertyCmd;
-       
+   delete fAddConstPropertyCmd;      
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
