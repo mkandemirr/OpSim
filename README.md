@@ -1,12 +1,9 @@
 # OPSimTool
+
 OpsimTool is a set of additions to the Geant4 toolkit that facilitate the implementation of optical photon applications and increase the flexibility and maintainability of developed applications. It also provides interfaces for creating reusable and portable material build code. This tool has been created according to users' needs and perspectives, considering frequently asked questions, most encountered challenges, and evolving needs over time in the optical category of the Geant4 official forum page.
              
-<<<<<<< HEAD
 ## The package structure:   
-=======
-## The package structure:
-       
->>>>>>> 81d10d2 (version 0.1.0)
+
 _OPSim/OPSimTool_: This directory includes the header and implementation files of OPSimTool. 
 
 _OPSim/examples_: To demonstrate how to use OPSimTool in an application, we choose OpNovice, one of the examples in Geant4's optical category. This directory contains two versions of the selected application.  
@@ -30,6 +27,7 @@ _OPSim/EljenScintillators/data_: This directory contains energy-dependent data f
 _OPSim/EljenScintillators/macros_ : This directory includes a macro file(file with .mac extension) for each scintilator. 
 
 ## Tested on 
+
 * Os: Linux (Ubuntu 22.04.2 LTS)
 * Architecture: x86_64
 * Compiler: GCC 11.3.0
@@ -64,6 +62,7 @@ passed to CMake. The first argument to CMake is the path to the source directory
 All versions of OPNovice run in the same way.  
  
 ## Contacts 
+
 If you have any questions or wish to notify of updates and/or modification please contact: \
 Mustafa Kandemir (mustafa.kandemir@erdogan.edu.tr)
 
