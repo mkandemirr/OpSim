@@ -63,6 +63,20 @@ All versions of OPNovice run in the same way.
  
 ## Contacts 
 
-If you have any questions or wish to notify of updates and/or modification please contact: \
+If you have any questions or wish to notify of updates and/or modifications please contact: \
 Mustafa Kandemir (mustafa.kandemir@erdogan.edu.tr)
+
+## Citation
+@article{KANDEMIR2023108873, \
+title = {OPSimTool: A custom tool for optical photon simulation in Geant4}, \
+journal = {Computer Physics Communications}, \
+volume = {292}, \
+pages = {108873}, \
+year = {2023}, \
+issn = {0010-4655}, \
+doi = {https://doi.org/10.1016/j.cpc.2023.108873}, \
+url = {https://www.sciencedirect.com/science/article/pii/S0010465523002187}, \
+author = {Mustafa Kandemir}, \
+keywords = {Scintillators, Scintillation photon, Light collection, Material optical properties, Eljen scintillators} \
+}
 
