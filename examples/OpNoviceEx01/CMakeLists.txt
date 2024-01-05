@@ -28,19 +28,15 @@ include(${Geant4_USE_FILE})
 #----------------------------------------------------------------------------
 # Locate sources and headers for this project
 
-#Modified by MK----------
 include_directories(${PROJECT_SOURCE_DIR}/include 
                     ${Geant4_INCLUDE_DIR}
-                    ${PROJECT_SOURCE_DIR}/OPSimTool/include
                     )
                                                     
-file(GLOB sources ${PROJECT_SOURCE_DIR}/src/*.cc
-                  ${PROJECT_SOURCE_DIR}/OPSimTool/src/*.cc      
-    )
+file(GLOB sources ${PROJECT_SOURCE_DIR}/src/*.cc)
+file(GLOB headers ${PROJECT_SOURCE_DIR}/include/*.hh)
 
-file(GLOB headers ${PROJECT_SOURCE_DIR}/include/*.hh
-                  ${PROJECT_SOURCE_DIR}/OPSimTool/include/*.hh
-    )
+add_subdirectory(OPSim)
+
 #------------------
 
 if (GEANT4_USE_GDML)
@@ -58,7 +54,7 @@ endif()
 # Add the executable, and link it to the Geant4 libraries
 #
 add_executable(OpNoviceEx01 OpNoviceEx01.cc ${sources} ${headers})
-target_link_libraries(OpNoviceEx01 ${Geant4_LIBRARIES} )
+target_link_libraries(OpNoviceEx01 OPSim ${Geant4_LIBRARIES} )
 
 #Added by MK----------
 file(GLOB_RECURSE data RELATIVE ${PROJECT_SOURCE_DIR} data/*)

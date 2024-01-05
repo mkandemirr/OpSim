@@ -92,7 +92,7 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
   water->AddElement(H, 2);
   water->AddElement(O, 1);
 
-  //**********Usage of OPSimTool's classes*********************//
+  //**********Usage of OPSim classes*********************//
   G4UImanager* uImanager = G4UImanager::GetUIpointer(); 
   
   //water
@@ -143,7 +143,7 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
 
   // ------------- Surfaces --------------
 
-  //**********Usage of OPSimTool's classes*********************//
+  //**********Usage of OPSim classes*********************//
   OpticalSurface* opWaterSurface = new OpticalSurface("waterSurface");
   uImanager->ApplyCommand("/control/execute macros/opticalSurface/waterSurface.mac");
   //********************************************************//
@@ -158,7 +158,7 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
   if(opticalSurface)
     opticalSurface->DumpInfo();
 
-  //**********Usage of OPSimTool's classes*********************//
+  //**********Usage of OPSim classes*********************//
   OpticalSurface* opAirSurface = new OpticalSurface("airSurface");
   uImanager->ApplyCommand("/control/execute macros/opticalSurface/airSurface.mac");
   //********************************************************//
@@ -173,7 +173,7 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
     opticalSurface->DumpInfo();
 
 
-  //**********Usage of OPSimTool's classes*********************//
+  //**********Usage of OPSim classes*********************//
   MaterialPropertiesTable* myST2 = new MaterialPropertiesTable("optAirSurface");
   uImanager->ApplyCommand("/control/execute macros/matPropTable/optAirSurface.mac");
   //********************************************************//
@@ -201,7 +201,7 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
     PrintError(ed);
   }
   
-  //**********Usage of OPSimTool's classes*********************//
+  //**********Usage of OPSim classes*********************//
   uImanager->ApplyCommand("/matPropTable/water/addProperty USERDEFINED data/matPropTable/water/miegh.txt eV m true true");
   //********************************************************//
   

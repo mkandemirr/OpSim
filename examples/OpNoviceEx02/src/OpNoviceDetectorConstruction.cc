@@ -74,7 +74,7 @@ OpNoviceDetectorConstruction::~OpNoviceDetectorConstruction()
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
 {
-	//**********Usage of OPSimTool's classes*********************//
+	//**********Usage of OPSim classes*********************//
   G4bool checkOverlaps = true;
   G4bool enableOpticalProperty = true;
     
@@ -122,11 +122,12 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
 
   // ------------- Surfaces --------------
   
-  //**********Usage of OPSimTool's classes*********************//
+  //**********Usage of OPSim classes*********************//
   G4UImanager* uImanager = G4UImanager::GetUIpointer(); 
   
   OpticalSurface* opWaterSurface = new OpticalSurface("waterSurface");
-  uImanager->ApplyCommand("/control/execute macros/opticalSurface/"+opWaterSurface->GetName()+".mac");
+  uImanager->ApplyCommand("/control/execute macros/opticalSurface/" + 
+    opWaterSurface->GetName()+".mac");
   //********************************************************//
    
   G4LogicalBorderSurface* waterSurface = new G4LogicalBorderSurface(
@@ -139,9 +140,10 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
     opticalSurface->DumpInfo();
 
   
-  //**********Usage of OPSimTool's classes*********************//
+  //**********Usage of OPSim classes*********************//
   OpticalSurface* opAirSurface = new OpticalSurface("airSurface");
-  uImanager->ApplyCommand("/control/execute macros/opticalSurface/"+opAirSurface->GetName()+".mac");
+  uImanager->ApplyCommand("/control/execute macros/opticalSurface/" + 
+    opAirSurface->GetName()+".mac");
   //********************************************************//
    
   G4LogicalSkinSurface* airSurface =
@@ -152,9 +154,10 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
   if(opticalSurface)
     opticalSurface->DumpInfo();
 
-  //**********Usage of OPSimTool's classes*********************//
+  //**********Usage of OPSim classes*********************//
   MaterialPropertiesTable* myST2 = new MaterialPropertiesTable("optAirSurface");
-  uImanager->ApplyCommand("/control/execute macros/matPropTable/"+myST2->GetName()+".mac");
+  uImanager->ApplyCommand("/control/execute macros/matPropTable/" + 
+    myST2->GetName()+".mac");
   //*******************************************************//
   
   if(fVerbose)
@@ -179,8 +182,9 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
     PrintError(ed);
   }
   
-  //**********Usage of OPSimTool's classes*********************//
-  uImanager->ApplyCommand("/matPropTable/water/addProperty USERDEFINED reusableMaterials/data/water/miegh.txt eV m true true");
+  //**********Usage of OPSim classes*********************//
+  uImanager->ApplyCommand("/matPropTable/water/addProperty USERDEFINED " 
+    "reusableMaterials/data/water/miegh.txt eV m true true");
   //***************************************************//
   
   if(myMPT1->GetProperty("USERDEFINED") == nullptr)
