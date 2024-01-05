@@ -1,3 +1,0 @@
-#Air MatProp
-/matPropTable/air/addProperty RINDEX reusableMaterials/data/air/refIndex.txt eV unitless 
-
