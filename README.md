@@ -13,6 +13,7 @@ _examples/OpNovice_ : This is the original version provided by the Geant4 team.
 _examples/OpNoviceEx01_: This example shows the usage of MaterialPropertiesTable and OpticalSurface classes and their implementations via user interface commands. Only the OPNoviceDetectorConstruction.cc file has been modified from the source files of OPNovice. All other implementation files are the same as in OpNovice. Also, different from the original version, directories named data, macros, and OPSim have been added to the project source directory. 
 
 _examples/OpNoviceEx02_: This example shows how to use VMaterialBuilder class to decouple a material build code from the detector construction code. This example also shows users how to create an app-independent reusable material build code while working on their projects. Only the OPNoviceDetectorConstruction.cc file has been modified from the source files of OPNovice. All other implementation files are the same as in OpNovice. Also, different from the original version, directories named data, macros, reusableMaterials, and OPSim have been added to the project source directory. The directory named reusableMaterials is now application-independent and can be moved across projects.
+
 _examples/output_: This directory contains one output from every three examples. It should be noted here that the output of all three examples(i.e., printed output of material properties table) is the same as expected. 
 
 ## Tested on 
@@ -23,7 +24,7 @@ _examples/output_: This directory contains one output from every three examples.
 * Geant4.11.1.1
 
 ## How to use OPSim in a Geant4 optical application? 
-Copy the OPSim directory to the project source directory, where your CMakeList.txt file is located, and add the following two lines of code to the appropriate place of your CMakeList.txt file (for help, you can examine the CMakeList.txt files in the provided example applications). \
+Copy the OPSim directory to the project source directory, where your CMakeList.txt file is located, and add the following two lines of code to the appropriate place of your CMakeList.txt file (for help, you can examine the CMakeList.txt files in the provided example applications). 
 
 before the executable target is created:
  ```cmake	
