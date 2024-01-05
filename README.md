@@ -4,27 +4,17 @@ OpsimTool is a set of additions to the Geant4 toolkit that facilitate the implem
              
 ## The package structure:   
 
-_OPSim/OPSimTool_: This directory includes the header and implementation files of OPSimTool. 
+_OPSimTool_: This directory includes the header and implementation files of OPSimTool. 
 
-_OPSim/examples_: To demonstrate how to use OPSimTool in an application, we choose OpNovice, one of the examples in Geant4's optical category. This directory contains two versions of the selected application.  
+_examples_: To demonstrate how to use OPSimTool in an application, we choose OpNovice, one of the examples in Geant4's optical category. This directory contains two versions of the selected application.  
 
-_OPSim/examples/OpNovice_ : This is the original version provided by the Geant4 team.
+_examples/OpNovice_ : This is the original version provided by the Geant4 team.
 
-_OPSim/examples/OpNoviceEx01_: This example shows the usage of MaterialPropertiesTable and OpticalSurface classes and their implementations via user interface commands. Only the OPNoviceDetectorConstruction.cc file has been modified from the source files of OPNovice. All other implementation files are the same as in OpNovice. Also, different from the original version, directories named data, macros, and OPSimTool have been added to the project source directory. 
+_examples/OpNoviceEx01_: This example shows the usage of MaterialPropertiesTable and OpticalSurface classes and their implementations via user interface commands. Only the OPNoviceDetectorConstruction.cc file has been modified from the source files of OPNovice. All other implementation files are the same as in OpNovice. Also, different from the original version, directories named data, macros, and OPSimTool have been added to the project source directory. 
 
-_OPSim/examples/OpNoviceEx02_: This example shows how to use VMaterialBuilder class to decouple a material build code from the detector construction code. This example also shows users how to create an app-independent reusable material build code while working on their own projects. Only the OPNoviceDetectorConstruction.cc file has been modified from the source files of OPNovice. All other implementation files are the same as in OpNovice. Also, different from the original version, directories named data, macros, reusableMaterials, and OPSimTool have been added to the project source directory. The directory named reusableMaterials is now application-independent and can be moved across projects.
+_examples/OpNoviceEx02_: This example shows how to use VMaterialBuilder class to decouple a material build code from the detector construction code. This example also shows users how to create an app-independent reusable material build code while working on their own projects. Only the OPNoviceDetectorConstruction.cc file has been modified from the source files of OPNovice. All other implementation files are the same as in OpNovice. Also, different from the original version, directories named data, macros, reusableMaterials, and OPSimTool have been added to the project source directory. The directory named reusableMaterials is now application-independent and can be moved across projects.
 
-_OPSim/examples/output_: This directory contains one output from every three examples. It should be noted here that the output of all three examples(i.e., printed output of material properties table) is the same as expected. 
-
-_OPSim/EljenScintillators_: To demonstrate how to build a material factory class using OPSimTool, we fully implement and parameterize four of the widely used Eljen scintillators on the market and made them available to users. This directory is also a good example showing how data (i.e. ASCI files), macro files, and C++ files are organized when creating a factory class. Those who want to use these scintillators in their applications should copy this directory into their project source directory.
-                                                                
-_OPSim/EljenScintillators/includes_: This directory includes header files of the scintillators' builder classes.
-
-_OPSim/EljenScintillators/src_: This directory includes implementation files of the scintillators' builder classes. 
-
-_OPSim/EljenScintillators/data_: This directory contains energy-dependent data for the optical properties of scintillators, such as emission spectrum, refractive index, and absorption length.
-
-_OPSim/EljenScintillators/macros_ : This directory includes a macro file(file with .mac extension) for each scintilator. 
+_examples/output_: This directory contains one output from every three examples. It should be noted here that the output of all three examples(i.e., printed output of material properties table) is the same as expected. 
 
 ## Tested on 
 
