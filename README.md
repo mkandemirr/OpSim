@@ -4,15 +4,15 @@ OPSim is a set of additions to the Geant4 toolkit that facilitate the implementa
              
 ## The package structure:   
 
-_OPSim_: This directory includes the header and implementation files of OPSimTool. 
+_OPSim_: This directory includes the header and implementation files of OPSim. 
 
-_examples_: To demonstrate how to use OPSimTool in an application, we choose OpNovice, one of the examples in Geant4's optical category. This directory contains two versions of the selected application.  
+_examples_: To demonstrate how to use OPSim in an application, we choose OpNovice, one of the examples in Geant4's optical category. This directory contains two versions of the selected application.  
 
 _examples/OpNovice_ : This is the original version provided by the Geant4 team.
 
-_examples/OpNoviceEx01_: This example shows the usage of MaterialPropertiesTable and OpticalSurface classes and their implementations via user interface commands. Only the OPNoviceDetectorConstruction.cc file has been modified from the source files of OPNovice. All other implementation files are the same as in OpNovice. Also, different from the original version, directories named data, macros, and OPSimTool have been added to the project source directory. 
+_examples/OpNoviceEx01_: This example shows the usage of MaterialPropertiesTable and OpticalSurface classes and their implementations via user interface commands. Only the OPNoviceDetectorConstruction.cc file has been modified from the source files of OPNovice. All other implementation files are the same as in OpNovice. Also, different from the original version, directories named data, macros, and OPSim have been added to the project source directory. 
 
-_examples/OpNoviceEx02_: This example shows how to use VMaterialBuilder class to decouple a material build code from the detector construction code. This example also shows users how to create an app-independent reusable material build code while working on their own projects. Only the OPNoviceDetectorConstruction.cc file has been modified from the source files of OPNovice. All other implementation files are the same as in OpNovice. Also, different from the original version, directories named data, macros, reusableMaterials, and OPSimTool have been added to the project source directory. The directory named reusableMaterials is now application-independent and can be moved across projects.
+_examples/OpNoviceEx02_: This example shows how to use VMaterialBuilder class to decouple a material build code from the detector construction code. This example also shows users how to create an app-independent reusable material build code while working on their projects. Only the OPNoviceDetectorConstruction.cc file has been modified from the source files of OPNovice. All other implementation files are the same as in OpNovice. Also, different from the original version, directories named data, macros, reusableMaterials, and OPSim have been added to the project source directory. The directory named reusableMaterials is now application-independent and can be moved across projects.
 _examples/output_: This directory contains one output from every three examples. It should be noted here that the output of all three examples(i.e., printed output of material properties table) is the same as expected. 
 
 ## Tested on 
