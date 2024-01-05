@@ -22,6 +22,13 @@ _examples/output_: This directory contains one output from every three examples.
 * Compiler: GCC 11.3.0
 * Geant4.11.1.1
 
+## How to use OPSim in a Geant4 optical application? 
+Copy the OPSim directory to the project source directory, where your CMakeList.txt file is located, and add the following code to your CMakeList.txt file:
+ ```cmake	
+   add_subdirectory(OPSim)
+   target_link_libraries(OpNoviceEx01 OPSim ${Geant4_LIBRARIES} )
+  ```
+
 ## How to run the provided example applications?   
   
 1. Go to the directory where you installed the OpNovice in your system.
